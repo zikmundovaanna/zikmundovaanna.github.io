@@ -1,41 +1,204 @@
-Moje hudební pouť ZUŠkou
-Začalo to hlasem,
-v souboru Lísteček —
-malinký krok na velké pódium,
-první tóny, první potlesk,
-první pocit, že hudba má sílu spojovat.
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alma Mater Mé Hudby</title>
 
-Pak přišla flétna.
-Nenápadná, dřevěná,
-ale s hlasem, který dokázal vyprávět.
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
-Roky plynuly mezi notami,
-mezi koncerty v sálech i kostelích,
-mezi zkouškami, kde čas utíkal rychleji
-než stupnice pod prsty.
+  <style>
+    /* ======================
+       COLORS AND FONTS
+    ====================== */
+    :root {
+      --primary-color: #6B4E31; /* dark wood/brown */
+      --secondary-color: #F5F0E1; /* soft cream background */
+      --accent-color: #D9A066; /* golden highlight */
+      --text-color: #333333;
+      --heading-font: 'Playfair Display', serif;
+      --body-font: 'Roboto', sans-serif;
+    }
 
-A potom flétnový soubor —
-místo, kde jedna flétna nestačí.
+    /* ======================
+       RESET & BASE STYLES
+    ====================== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-Kde se tóny splétají do jednoho dechu,
-kde každý hlas má své místo,
-a přesto je součástí něčeho většího.
+    body {
+      font-family: var(--body-font);
+      color: var(--text-color);
+      background-color: var(--secondary-color);
+      line-height: 1.6;
+    }
 
-Tam jsem poznala,
-že hudba není o sóle,
-ale o důvěře.
-O naslouchání.
-O přátelství, které vzniká
-mezi nádechem a prvním tónem.
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
 
-Dvanáct let hudby.
-Dvanáct let zážitků, cest, smíchu,
-trémy před koncertem
-a radosti po posledním akordu.
+    a:hover {
+      text-decoration: underline;
+    }
 
-A pak hoboj.
-Nová cesta, hlubší barva,
-odvážnější krok.
+    /* ======================
+       HEADER / HERO
+    ====================== */
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+    }
 
-Ale stále stejný dech,
-který mě vede dál.
+    header h1 {
+      font-family: var(--heading-font);
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ======================
+       SECTIONS
+    ====================== */
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-family: var(--heading-font);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+      text-align: center;
+    }
+
+    section p {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    /* ======================
+       REPERTOIRE LIST
+    ====================== */
+    .repertoire {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .piece {
+      background-color: var(--accent-color);
+      color: var(--secondary-color);
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      min-width: 180px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    /* ======================
+       CONTACT
+    ====================== */
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .contact a {
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      background-color: var(--accent-color);
+      color: var(--primary-color);
+    }
+
+    /* ======================
+       FOOTER
+    ====================== */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      font-size: 0.9rem;
+    }
+
+    /* ======================
+       RESPONSIVE
+    ====================== */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🎵 Alma Mater Mé Hudby</h1>
+    <p>Vítej na mém osobním hudebním portfoliu – zobcová flétna & hoboj. Hudba je má cesta, mé zážitky a přátelé.</p>
+  </header>
+
+  <!-- ABOUT / MOJE CESTA -->
+  <section id="about">
+    <h2>🌿 Moje hudební cesta</h2>
+    <p>Začala jsem zpěvem v souboru Lísteček, pokračovala dvanácti lety na zobcovou flétnu a ve flétnovém souboru – kde jedna flétna nestačí. Nyní objevují novou cestu na hoboj.</p>
+  </section>
+
+  <!-- REPERTOIRE -->
+  <section id="repertoire">
+    <h2>🎼 Repertoár</h2>
+    <div class="repertoire">
+      <div class="piece">Barokní skladby</div>
+      <div class="piece">Renesanční hudba</div>
+      <div class="piece">Orchestrální party</div>
+      <div class="piece">Komorní hudba</div>
+      <div class="piece">Sóla na flétnu</div>
+      <div class="piece">Sóla na hoboj</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>✨ Kontakt</h2>
+    <div class="contact">
+      <a href="mailto:tvoje@email.cz">📧 Napiš mi email</a>
+      <a href="https://instagram.com/tvojehandle" target="_blank">📱 Instagram</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2026 Tvoje Jméno | Hudba je můj dech
+  </footer>
+
+</body>
+</html>
